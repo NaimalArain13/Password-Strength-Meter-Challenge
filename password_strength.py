@@ -9,12 +9,12 @@ def check_password_strength(password):
         message.append("❌ Password should be at least 8 characters long.")
     
     if re.search(r"[A-Z]", password) and re.search(r"[a-z]", password):
-        score += 1
+        score += 2
     else:
        message.append( "❌ Password must contains both uppercase and lowercase. 🆎")
       
     if re.search(r"\d",password):
-        score += 2
+        score += 1
     else:
         message.append("❌ Add atleast one digit (0-9).")
     

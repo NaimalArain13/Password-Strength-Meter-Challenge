@@ -6,7 +6,7 @@ st.title("🔐Password Strength Checker 👀")
 
 #Ask user to enter password
 password  = st.text_input("Enter your Password: ")
-score, messages = password_strength.check_password_strength(password)
+# score, messages = password_strength.check_password_strength(password)
 
 if password:
     score, feedback = password_strength.check_password_strength(password)
